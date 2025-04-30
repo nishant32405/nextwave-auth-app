@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ThankYou.css'; // 👈 Custom CSS we'll create
+import './ThankYou.css'; 
 
 function ThankYou() {
   const navigate = useNavigate();
