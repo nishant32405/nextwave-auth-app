@@ -12,7 +12,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/users/login', { email, password }); 
+      const res = await axios.post('https://nextwave-backend.onrender.com/api/users/login', { email, password }); 
       localStorage.setItem('email', email);
       alert('OTP Sent: ' + res.data.otp);
       navigate('/otp');
