@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
-import './Register.css'; // We'll create a custom CSS file for futuristic effects
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import './Register.css'; 
 
 function Register() {
   const [formData, setFormData] = useState({
