@@ -1,4 +1,4 @@
-/* Futuristic background */
+
 .otp-page {
     min-height: 100vh;
     background: linear-gradient(135deg, #1f4037, #99f2c8);
@@ -9,14 +9,14 @@
     justify-content: center;
   }
   
-  /* Animate background */
+
   @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
   
-  /* Glassy card */
+
   .glass-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
@@ -25,13 +25,13 @@
     color: white;
   }
   
-  /* Title text */
+
   .futuristic-title {
     font-weight: bold;
     text-shadow: 0 0 10px #00ffff;
   }
   
-  /* Futuristic input field */
+
   .futuristic-input {
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid #00ffff;
@@ -45,7 +45,7 @@
     color: #ccc;
   }
   
-  /* Futuristic Button */
+
   .futuristic-btn {
     background: linear-gradient(45deg, #00c6ff, #0072ff);
     color: white;
