@@ -10,7 +10,7 @@ function ThankYou() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/users/delete/${user.email}`);
+      await axios.delete(`https://nextwave-backend.onrender.com/api/users/delete/${user.email}`);
       alert('Account Deleted');
       localStorage.clear();
       navigate('/');
