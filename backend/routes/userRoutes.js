@@ -4,7 +4,7 @@ const multer = require('multer');
 const bcrypt = require('bcryptjs');
 const User = require('../models/User');
 
-// Multer setup for image upload
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, 'uploads/');
@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
-// --- Create Account ---
+
 router.post('/register', upload.single('image'), async (req, res) => {
   const { name, email, password, company, age, dob } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
@@ -37,7 +37,7 @@ router.post('/register', upload.single('image'), async (req, res) => {
   }
 });
 
-// --- Login ---
+
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
   
@@ -62,7 +62,6 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// --- Verify OTP ---
 router.post('/verify-otp', async (req, res) => {
   const { email, otp } = req.body;
 
@@ -80,7 +79,7 @@ router.post('/verify-otp', async (req, res) => {
   }
 });
 
-// --- Delete User ---
+
 router.delete('/delete/:email', async (req, res) => {
   const { email } = req.params;
   try {
