@@ -11,7 +11,7 @@ function OTP() {
   const handleVerify = async () => {
     const email = localStorage.getItem('email');
     try {
-      const res = await axios.post('http://localhost:5000/api/users/verify-otp', { email, otp });
+      const res = await axios.post('https://nextwave-backend.onrender.com/api/users/verify-otp', { email, otp });
       localStorage.setItem('user', JSON.stringify(res.data.user));
       navigate('/thankyou');
     } catch (error) {
