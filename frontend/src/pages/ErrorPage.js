@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ErrorPage.css'; // Custom CSS for this page
+import './ErrorPage.css'; 
 
 function ErrorPage() {
   const navigate = useNavigate();
