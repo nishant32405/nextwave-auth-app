@@ -34,7 +34,7 @@ function Register() {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/users/register', data);
+      await axios.post('https://nextwave-backend.onrender.com/api/users/register', data);
       alert('Registered Successfully!');
       navigate('/');
     } catch (error) {
